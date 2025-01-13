@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", serif;
+}
+.header {
+    background: rgb(250, 0, 20);
+}
+.header__slider {
+    width: 100vw;
+    height: 80px;
+    object-fit: contain;
+}
+.nav {
+    background: #f5f0f0;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    height: 25px;
+}
+
+.nav-list__item {
+    list-style-type: none;
+}
+
+.nav-list__context {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0f1568;
+    font-size: 14px;
+}
+
+/* Lấy thằng li có class là list__item đầu tiên và css cho thẻ có class nav-list__context nằm bên trong nó */
+.nav-list__item:nth-of-type(1) .nav-list__context {
+    color: rgb(255, 0, 255);
+}
+.nav-list__item:nth-of-type(5) .nav-list__context,
+.nav-list__item:nth-of-type(6) .nav-list__context,
+.nav-list__item:nth-of-type(7) .nav-list__context,
+.nav-list__item:nth-of-type(8) .nav-list__context {
+    color: #9e9e9e;
+}
+
+.nav-list__item .nav-list__context:hover {
+    color: #f36d00;
+}
+
+.header__search {
+    height: 75px;
+    padding-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header__search__left {
+    width: 127px;
+    height: 40px;
+}
+.header__search__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__search__center {
+    background-color: #eff0f5;
+}
+
+.header__search__center__search {
+    min-width: 600px;
+    height: 45px;
+    border-radius: 2px;
+    padding: 13px 19px;
+    padding-right: 0;
+    padding-left: 12px;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__search__center__search__input {
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 13px 19px;
+    border: none;
+    outline: none;
+    background-color: #eff0f5;
+    flex: 1;
+}
+
+.header__search__center__search .header__search__center__search__icon {
+    min-width: 45px;
+    min-height: 45px;
+    border-radius: 0 2px 2px 0;
+    background: #f57224;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__search__center__search .header__search__center__search__icon > i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header__search__right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__search__right i {
+    display: block;
+    font-size: 29px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.header__search__right > img {
+    display: block;
+    width: 188px;
+    height: 45px;
+    object-fit: cover;
+    margin-left: 20px;
+}
+.header__search__right__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__search__right__quantity {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: -10px;
+}
+
+.promote {
+    display: flex;
+    justify-content: center;
+}
+.promote__content {
+    max-width: 1188px;
+}
+.promote__content__head {
+    display: flex;
+    height: 344px;
+    gap: 8px;
+    background: linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0)), linear-gradient(179.27deg, #ffedd6 .83%, #ffc3e3 46.78%, #fff 99.57%), linear-gradient(0deg, #fff, #fff);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.promote__content__head > img {
+    flex: 1;
+    object-fit: contain;
+    height: 100%;
+}
+.promote__content__head__right {
+    max-width: 194px;
+    height: 100%;
+}
+.promote__content__head__right__top {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.promote__content__head__right__top img {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+}
+.promote__content__head__right__top > span {
+    font-size: 14px;
+    color: #6c1d00;
+    font-weight: 500;
+    max-width: 138px;
+}
+
+.promote__content__body {
+    background-image: url("https://img.lazcdn.com/g/tps/imgextra/i2/O1CN01tceZus1IewufOY1tZ_!!6000000000919-2-tps-364-316.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 167px;
+    margin-top: 6px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.promote__content__body {
+    padding: 0 5px;
+}
+.promote__content__body__star {
+    font-size: 10px;
+    color: #fff;
+}
+.promote__content__body__star > i {
+    font-size: 10px;
+    color: #fff;
+}
+.promote__content__body__desc {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+.promote__content__body__list_option {
+    padding: 0 5px;
+}
+.promote__content__body__option {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.promote__content__body__option > img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+}
+.promote__content__body__option__title {
+    font-size: 14px;
+    color: #fff;
+}
+
+.promote__content__body__botton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-height: 90px;
+    background-color: #ffe0f1;
+}
+.promote__content__body__botton__left {
+    width: 90px;
+    height: 90px;
+}
+.promote__content__body__botton__left > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promote__content__body__botton__right {
+    width: 83px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+}
+.promote__content__body__botton__right > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.promote__content__head__right > span {
+    color: #2e3346;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    margin-left: 4px;
+    margin-top: 6px;
+}
