@@ -46,7 +46,7 @@
             <a href="" class="nav-list__context">Kiểm tra đơn hàng</a>
           </li>
           <li class="nav-list__item">
-            <a href="" class="nav-list__context">ĐĂNG NHẬP</a>
+            <a href="#" class="nav-list__context nav-list__login">ĐĂNG NHẬP</a>
           </li>
           <li class="nav-list__item">
             <a href="" class="nav-list__context">ĐĂNG KÝ</a>
@@ -188,6 +188,26 @@
       </section>
     </main>
 
+    <div class="modal">
+      <div class="modal__container">
+        <div class="modal__container__header">
+          <i class="fa-solid fa-xmark modal__container__icon-close"></i>
+          <strong class="modal__container__title auth-active">Mật khẩu</strong>
+          <strong class="modal__container__title">Số điện thoại</strong>
+        </div>
+        <div class="modal__container__content">
+          <div class="modal__container__content__fierd">
+            <input
+              type="password"
+              placeholder="Vui lòng nhập vào mật khẩu của bạn..."
+            />
+            <i class="fa-solid fa-eye-slash"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./src/js/index.js"></script>
+    <script src="./src/js/handle-modal.js"></script>
   </body>
 </html>
