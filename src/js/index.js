@@ -1,3 +1,5 @@
+
+
 // buổi 1
 // Javascript: biến(let, var, const), kiểu dữ liệu ngầm định
 // cấu trúc rẽ nhánh if else, toán tử 3 ngôi
@@ -217,24 +219,24 @@
 
 
 // Ví dụ thực tế
-const students =
-    [
-        {
-            name: "Student 1",
-            age: 22,
-            address: "HA NOI"
-        },
-        {
-            name: "Student 2",
-            age: 32,
-            address: "PHU THO"
-        },
-        {
-            name: 'Student 3',
-            age: 42,
-            address: "PHUC THO"
-        }
-    ]
+// const students =
+//     [
+//         {
+//             name: "Student 1",
+//             age: 22,
+//             address: "HA NOI"
+//         },
+//         {
+//             name: "Student 2",
+//             age: 32,
+//             address: "PHU THO"
+//         },
+//         {
+//             name: 'Student 3',
+//             age: 42,
+//             address: "PHUC THO"
+//         }
+//     ]
 
 
 // const result = students.filter(function (object, index) {
@@ -273,9 +275,209 @@ const students =
 // Lưu máy mình (local) -> workspace, lưu trên github(repository)
 
 
+// const b1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// ES6  -> DOM
+// const sum = b1.reduce(function (acc, value) {
+//     return acc + value
+// }, 0)
 
+// const students = [
+//     {
+//         name: "Student 1",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 3.0
+//     },
+//     {
+//         name: "Student 2",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 4.0
+//     },
+//     {
+//         name: "Student 3",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 4.0
+//     },
+//     {
+//         name: "Student 4",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 4.0
+//     },
+//     {
+//         name: "Student 5",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 4.0
+//     },
+//     {
+//         name: "Student 6",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 2.0
+//     },
+//     {
+//         name: "Student 7",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 1.0
+//     },
+//     {
+//         name: "Student 8",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 4.0
+//     }, {
+//         name: "Student 9",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 4.0
+//     }
+//     , {
+//         name: "Student 10",
+//         age: 12,
+//         address: "HA Noi",
+//         gpa: 2.0
+//     }
+// ]
+
+// const newArr = students.filter(function (object) {
+//     return object.gpa >= 3
+// })
+
+// const result = students.find(function (value) {
+//     return value.gpa == 3.0 && value.address == "HA Noi"
+// })
+
+
+// console.log(result);
+
+// Cach phuoc thuc CRUD mang
+// push -> thêm một hoặc nhiều phần tử vào cuối mảng
+// pop -> Xóa phần từ ở cuối mảng và trả về giá trị vừa được xóa
+// shift -> xóa phần tử đầu tiên của mảng và trả về chính nó, nếu không tồn tại thì trả về undefine
+// unshift -> thêm một hoặc nhiều phần tử vào đầu mảng và trả về độ dài các phần tử trong mảng
+// splice -> Xóa phần tử dựa vào chỉ số index. Giá trị đầu tiền là vị trí đứng, giá trị thứ hai là số phần tử sẽ xóa đứng sau nó
+// slice -> Không làm thay đổi giá trị bản đầu của mảng, nó dùng để cắt dựa theo chỉ số index
+// tìm phần tử có giá trị là 3 và xóa nó ra khỏi mảng
+// join dùng để chuyển đổi mảng thành một chuỗi quy tắc được áp dụng ở chuổi đối số nhận vào
+// typeof -> dung de kiem tra kieu du lieu
+// reverse -> dùng để đảo ngược các phần tử trong mảng  [1, 2, 3, 4]
+// sort -> dùng để sắp xếp tăng dần giảm dần dựa vào điều kiện nếu a - b -> tăng dần, b - a thì giảm dẩn
+// const newArr = arr.filter(function value(value) {
+//     return value != 3
+// })
+
+// const arr = [1, 2, 3, 4, 5, 6]
+
+// const newArr = arr.splice(2, 1);
+// console.log(arr);
+
+// const arr = [1, 2, 3, 4, 5, 6]
+
+// const newArr = arr.slice(0, 2)
+// console.log(newArr);
+
+
+// const arr = [1, 2, 3, 4, 5, 6]
+// [1, 2, 3, 4, 5, 6]
+// join default: 1,2,3,4,5,6
+// 1-2-3-4-5-6
+
+// const newString = arr.join('*')
+// console.log(newString);
+
+
+// // const arr = [4, 1, 2]
+// students.sort(function (a, b) {
+//     return b.gpa - a.gpa;
+// })
+
+
+// console.log(students);
+
+
+
+// ES6 (2015)  
+// const, let, arrow fuc, sprerd (...), rest (...)
+// function abc () {
+//     console.log("ABC");
+// }
+// abc()
+
+// const abc =  () => {
+//     console.log("Hello dat");
+// }
+
+// abc()
+
+// const arr = [1, 2, 3, 4]
+// arr.forEach(value => {
+//     console.log(value);
+// })
+
+// const result = arr.reduce((acc, value) => acc + value, 0)
+
+
+// express fuc
+// let abc = function (a, b) {
+//     return a + b;
+// }
+// arrow fuc
+// const arrow = (a, b) => {
+//     return a + b;
+// }
+// decrisec fuc ES5 -
+// function dec (a, b) {
+//     return a + b;
+// }
+// khong co this
+// abc()
+// hosting 
+// const abc = () => {
+//     console.log("Say hello.");
+// }'
+
+// const abc = arr.reduce((acc, value) => acc + value, 0)
+
+// arr.forEach(value => {
+//     console.log(value);
+// })
+// let arr = [1, 2, 3, 4, 5]// copy arr
+// let newArr = [...arr]
+// console.log(...arr);
+// let cmt = {
+//     id: 1,
+//     iime: "001203031721"
+// }
+
+// let student = {
+//     name: "Nguyen Xuan Manh",
+//     age: 20,
+//     ...cmt
+// }
+
+// // const newObject = {...object}
+// console.log(student);
+
+
+// rest
+function abc(a, b,...rest) {
+    return a + b;
+}
+
+// sprerd 
+console.log(abc(1, 2, 3, 4, 5, 6, 7, 8));
+
+
+
+// function tong (a, b, c) {
+//     return a + b + c;
+// }
+
+// console.log(tong(1, 2, 3));
 
 
 
