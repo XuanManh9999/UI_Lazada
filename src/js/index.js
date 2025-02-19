@@ -1,5 +1,3 @@
-
-
 // buổi 1
 // Javascript: biến(let, var, const), kiểu dữ liệu ngầm định
 // cấu trúc rẽ nhánh if else, toán tử 3 ngôi
@@ -81,7 +79,7 @@
 // console.log(arr1);
 // console.log(arr2);
 //  Cách lấy ra phần tử trong mảng là: name_arr[chỉ muc]
-// Các phương thức của mảng: 
+// Các phương thức của mảng:
 // +, forEach(): dùng để lặp qua các phần tử trong mảng
 // +, filter(): dùng để lọc giá trị theo điều kiện nhất định (trả về một mảng mới)
 // +, find(): dùng để tìm kiếm giá trị trong mảng thỏa mãn, nếu tìm thấy thì nó trả về phần tử đó, nếu không thì undefine
@@ -92,7 +90,6 @@
 // +, indexOf(): trả về vị trí index của phần tử nếu có, nếu không có thì trả về -1
 // +, includes(): trả về true nếu tìm thấy phần tử đó trong mảng, false nếu không tìm thấy
 // +, findIndex(): trả về chỉ mục của phần tử nếu thỏa mãn
-
 
 // for (let i = 0; i < arr1.length; i++) {
 //     console.log(arr1[i]);
@@ -110,7 +107,6 @@
 // })
 
 // console.log(sum);
-
 
 // const arr1 = [1, 2, 3, 4, 5]
 
@@ -140,7 +136,6 @@
 //     console.log("Mang khong co phan tu >= 6");
 
 // }
-
 
 // const arr1 = [2, 4]
 
@@ -188,20 +183,18 @@
 // })
 // console.log(result);
 
-
 // // object -> đối tượng {}
 // const persion = {}
 // key, value
-// để truy xuất được giá trị của object 
+// để truy xuất được giá trị của object
 // object.key -> lấy ra được value
 // ten
-// ngay sinh 
+// ngay sinh
 // dia chi
 
 // const ten = "DAT"
 // const dia_chi = "PHU THO"
 // const ngay_sinh = "31/05/2006"
-
 
 // const dat = {
 //     ten: "DAT",
@@ -215,8 +208,6 @@
 // // delete dat.truong_hoc
 
 // console.log(dat);
-
-
 
 // Ví dụ thực tế
 // const students =
@@ -238,7 +229,6 @@
 //         }
 //     ]
 
-
 // const result = students.filter(function (object, index) {
 //     return object.age <= 40 && object.address == 'HA NOI'
 // })
@@ -250,7 +240,6 @@
 //     console.log(object.name, object.age, object.address);
 // })
 // console.log(students);
-
 
 // cach dung truyen thong for
 
@@ -264,16 +253,13 @@
 
 // console.log(result);
 
-
 // Cho mảng số nguyên từ 1 -> 10 -> thực hiện tính tổng. Không dùng for
 // Tạo 10 đối tượng sinh viên nằm trong một mảng. Đối tượng có các trường (name, age, address, gpa) và in ra màn hình
 // lấy ra tất cả sinh viên có gpa >= 3.0
 // Tìm sinh viên có GPA 3.0 ở hà nội
 
-
-// GITHUB 
+// GITHUB
 // Lưu máy mình (local) -> workspace, lưu trên github(repository)
-
 
 // const b1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -351,7 +337,6 @@
 //     return value.gpa == 3.0 && value.address == "HA Noi"
 // })
 
-
 // console.log(result);
 
 // Cach phuoc thuc CRUD mang
@@ -380,7 +365,6 @@
 // const newArr = arr.slice(0, 2)
 // console.log(newArr);
 
-
 // const arr = [1, 2, 3, 4, 5, 6]
 // [1, 2, 3, 4, 5, 6]
 // join default: 1,2,3,4,5,6
@@ -389,18 +373,14 @@
 // const newString = arr.join('*')
 // console.log(newString);
 
-
 // // const arr = [4, 1, 2]
 // students.sort(function (a, b) {
 //     return b.gpa - a.gpa;
 // })
 
-
 // console.log(students);
 
-
-
-// ES6 (2015)  
+// ES6 (2015)
 // const, let, arrow fuc, sprerd (...), rest (...)
 // function abc () {
 //     console.log("ABC");
@@ -420,7 +400,6 @@
 
 // const result = arr.reduce((acc, value) => acc + value, 0)
 
-
 // express fuc
 // let abc = function (a, b) {
 //     return a + b;
@@ -435,7 +414,7 @@
 // }
 // khong co this
 // abc()
-// hosting 
+// hosting
 // const abc = () => {
 //     console.log("Say hello.");
 // }'
@@ -462,22 +441,156 @@
 // // const newObject = {...object}
 // console.log(student);
 
-
 // rest
-function abc(a, b,...rest) {
-    return a + b;
-}
+// function abc(a, b, ...rest) {
+//   return a + b;
+// }
 
-// sprerd 
-console.log(abc(1, 2, 3, 4, 5, 6, 7, 8));
-
-
+// sprerd
+// console.log(abc(1, 2, 3, 4, 5, 6, 7, 8));
 
 // function tong (a, b, c) {
 //     return a + b + c;
 // }
 
 // console.log(tong(1, 2, 3));
+// function sum(a, b) {
+//   // decrisfuc
+// }
 
+// const abc = function () {
 
+// }
 
+// const sum = (a, b) => {
+//   a + b;
+// };
+
+// const total = sum(2, 3);
+
+// console.log("Value: ", total);
+// spred, rest
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// console.log(...arr);
+
+// let logger = (a, b, ...dat) => {
+//   console.log("a: ", a);
+//   console.log("b: ", b);
+
+//   console.log(dat);
+// };
+
+// logger(1, 2, 3, 4, 5);
+
+// teplate chuoi (ES6)
+
+// const ten = "Dat";
+// const tuoi = 20;
+// const dia_chi = "PHU THO";
+
+// console.log("Ho Ten: ", ten, "Tuoi: ", tuoi, "Dia Chi: ", dia_chi);
+// console.log(`Họ tên: ${ten}; Tuổi: ${tuoi}; Địa chỉ: ${dia_chi}
+//     ; Trường học: Đại Học Công Nghệ Đông Á`);
+
+// sau này thì dữ liệu của em được lấy từ DB
+
+// Optional chaining (?.)
+// const data = null;
+
+// console.log(data?.name);
+
+// null, undefined, '', 0, NaN, false
+
+// null mà dùng để truy xuất giá trị nào đó thì sẽ gây ra lỗi cras màn hình tráng
+
+// [null, undefined, "", 0, NaN, false, -1, {}, []].forEach((value) => {
+//   if (value) {
+//     console.log("DUNG: ", value);
+//   }
+// });
+
+// null list ?? ES6
+// Nếu giá trị là null hoặc undefined thì trả về giá trị bên phải, nếu khác thì trả về giá trị bên trái
+// const result = goi_server_lay_du_lieu ?? "Nguyen Xuan Manh";
+// console.log(result);
+
+// default value ES6 (func)
+// function sum(a = 1, b = 1) {
+//   return a + b;
+// }
+
+// console.log(sum(3, 3));
+
+// for of, in dùng chủ yếu cho array
+// const arr = [1, 2, 3, 4, 5];
+// for of -> dùng để in từng giá trị của phần tử trong mảng ra
+// for (gia_tri of arr) {
+//   console.log(gia_tri);
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+
+// // for in -> dùng để in từng giá trị chỉ mục của mảng
+// for (index in arr) {
+//   console.log(index);
+// }
+
+// Thư viện toán học Math
+// ceil, floor, random, round, max, min, sqrt, pi, pow, abs
+
+// console.log(Math.PI); // 3.14
+// console.log(Math.ceil(3.001)); // ceil là hàm làm tròn lên VD: 3.001 -> 4
+// console.log(Math.floor(2.999999)); // floor là hàm làm tròn xuống VD: 2.99999 -> 2
+// console.log(Math.round(3.0)); // Nếu giá trị 0 -> 0.49 -> làm tròn xuống. Còn từ 0.5 -> 1 thì làm trong lên
+// console.log(Math.max(...[1, 2, 3, 4, 5, 6, 99]));
+// console.log(Math.min(...[1, 2, 3, 4, 5, 6, 99]));
+// console.log(Math.sqrt(2)); // hàm căn bậc 2
+// console.log(Math.pow(3, 4)); //  hàm số mũ VD: 3^4 = 81
+// console.log(Math.abs(-21)); // Hàm giá trị tuyệt đối
+// console.log(Math.random()); // 0 -> 1;
+
+// for (let i = 0; i <= 10; i++) {
+//   let isRandom = Math.round(Math.random() * 100);
+//   if (isRandom <= 50) {
+//     console.log("Nang Cap Do Thanh Cong");
+//   } else {
+//     console.log("Nang Cap Do That bai");
+//   }
+// }
+
+// DOM dùng để thực hiện/tương tác với các giao diện đã được đánh dấu
+// Cách lấy các element từ DOM
+// id, class // HTMLCollection
+const elementHeaderClass = document.getElementsByClassName("header");
+const elementHeaderId = document.getElementById("header");
+// tag => tem the // HTMLCollection
+const elementHeaderTag = document.getElementsByTagName("header");
+
+// Cách 2 dùng querySelector, querySelectorAll // NoteList
+const selectorElementsByClass = document.querySelectorAll(".header");
+const selectorElementById = document.querySelector("#header");
+const selectorElementByTagName = document.querySelector("header");
+
+// Xử lý/Lắng nghe sự kiện, click, change, dbCick...
+// addEventListener dùng để lắng nghe các sự kiện
+
+// selectorElementById.addEventListener("click", () => {
+//   alert("Hello wolrd");
+// });
+
+// selectorElementById.ondblclick = () => {
+//   alert("Hello wolrd");
+// };
+
+const elementDesc = document.querySelector(".categories__item__left__desc");
+// mặc định dùng css inline, thêm thuộc tính vào thẻ mình lấy được
+// elementDesc.setAttribute("style", "color: #ccc");
+// elementDesc.setAttribute("title", "Hello abcdef");
+// Ưu điểm là dễ dàng, có thể thêm các thuộc tính không tồn tại trong element vào
+// Nhược điểm là không cho nhiều thuộc tính vào cùng một lúc được
+
+elementDesc.style.color = "red";
+elementDesc.style.fontSize = "50px";
+
+// DOM Tạo element, tìm element, dùng note char
