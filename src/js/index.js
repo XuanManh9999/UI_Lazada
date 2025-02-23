@@ -562,15 +562,15 @@
 // DOM dùng để thực hiện/tương tác với các giao diện đã được đánh dấu
 // Cách lấy các element từ DOM
 // id, class // HTMLCollection
-const elementHeaderClass = document.getElementsByClassName("header");
-const elementHeaderId = document.getElementById("header");
+// const elementHeaderClass = document.getElementsByClassName("header");
+// const elementHeaderId = document.getElementById("header");
 // tag => tem the // HTMLCollection
-const elementHeaderTag = document.getElementsByTagName("header");
+// const elementHeaderTag = document.getElementsByTagName("header");
 
 // Cách 2 dùng querySelector, querySelectorAll // NoteList
-const selectorElementsByClass = document.querySelectorAll(".header");
-const selectorElementById = document.querySelector("#header");
-const selectorElementByTagName = document.querySelector("header");
+// const selectorElementsByClass = document.querySelectorAll(".header");
+// const selectorElementById = document.querySelector("#header");
+// const selectorElementByTagName = document.querySelector("header");
 
 // Xử lý/Lắng nghe sự kiện, click, change, dbCick...
 // addEventListener dùng để lắng nghe các sự kiện
@@ -583,14 +583,97 @@ const selectorElementByTagName = document.querySelector("header");
 //   alert("Hello wolrd");
 // };
 
-const elementDesc = document.querySelector(".categories__item__left__desc");
+// const elementDesc = document.querySelector(".categories__item__left__desc");
 // mặc định dùng css inline, thêm thuộc tính vào thẻ mình lấy được
 // elementDesc.setAttribute("style", "color: #ccc");
 // elementDesc.setAttribute("title", "Hello abcdef");
 // Ưu điểm là dễ dàng, có thể thêm các thuộc tính không tồn tại trong element vào
 // Nhược điểm là không cho nhiều thuộc tính vào cùng một lúc được
 
-elementDesc.style.color = "red";
-elementDesc.style.fontSize = "50px";
+// elementDesc.style.color = "red";
+// elementDesc.style.fontSize = "50px";
 
 // DOM Tạo element, tìm element, dùng note char
+
+// const arr = [1, 2, 3, 4, 5];
+// for (let index in arr) {
+//   console.log(index);
+// }
+
+// for (let value of arr) {
+//   console.log(value);
+// }
+
+// event của element khi xử lý xự kiện
+const element = document.querySelector(".nav-list__context");
+// get noi dung qua element
+// console.log(element.textContent); // noi dung content
+// console.log(element.innerHTML); // lay tat ca ca element con ra
+
+// get noi dung voi su kien
+
+// element.onclick = (event) => {
+
+// }
+
+// const event = {
+//   baseURL: "http://google.com",
+//   target: {
+//     baseURI: "localhost:5500/index.html#",
+//   },
+// };
+
+// console.log(event.target.baseURI);
+
+// sự kiện event thường dùng để lấy các giá trị của element đó như tọa độ, nội dung, tên class...
+// element.addEventListener("click", (event) => {
+//   if (event.target.className === "nav-list__context") {
+//     alert("OK");
+//   } else {
+//     alert("NOT OK");
+//   }
+// });
+// các thuộc tính như tọa độ, kích thước, kiểu quên thì log event ra
+// một số thuộc tính cần nhớ là: target(chính element đó)
+
+// classList dùng để em tương tác với class của element
+// nó cung cấp sẵn các phương thức/hàm sẵn như add, remove, replace, contains
+// DOMTokenList la object xu ly class
+// element.classList.add("dat_phu_tho");
+// element.classList.add("manh_ba_vi");
+// element.classList.remove("nav-list__context");
+// element.classList.replace("dat_phu_tho", "dat_viet_tri"); // true neu thay the duoc, false neu khong
+// element.classList.contains("dat_viet_tri"); // true neu ton tai class nay, flase neu khong ton tai
+// toggle kết hợp add, và remove, lần đầu add, lần sau xóa cứ thế
+
+// const colors = ["red", "green", "blue", "black", "yellow", "pink"];
+// setInterval(() => {
+//   console.log("HEllo world");
+
+//   let randomIndex = Math.floor(Math.random() * colors.length);
+//   document
+//     .querySelector(".box")
+//     .setAttribute("style", `background-color: ${colors[randomIndex]}`);
+// }, 1000); // 1000 ~ 1s
+
+const no = document.querySelector(".no");
+const yes = document.querySelector(".yes");
+
+no.addEventListener("mouseenter", () => {
+  const ofset = ["X", "Y"];
+  const randomOfset = Math.floor(Math.random() * ofset.length);
+  let random = Math.floor(Math.random() * 600) + 150;
+
+  no.setAttribute(
+    "style",
+    `transform: translate${ofset[randomOfset]}(${random}%)`
+  );
+});
+
+yes.addEventListener("click", () => {
+  alert("Anh yeu em lam");
+});
+
+// animation
+
+setInterval(() => {}, 1000);
