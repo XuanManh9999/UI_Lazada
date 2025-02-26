@@ -605,7 +605,7 @@
 // }
 
 // event của element khi xử lý xự kiện
-const element = document.querySelector(".nav-list__context");
+// const element = document.querySelector(".nav-list__context");
 // get noi dung qua element
 // console.log(element.textContent); // noi dung content
 // console.log(element.innerHTML); // lay tat ca ca element con ra
@@ -641,39 +641,49 @@ const element = document.querySelector(".nav-list__context");
 // DOMTokenList la object xu ly class
 // element.classList.add("dat_phu_tho");
 // element.classList.add("manh_ba_vi");
-// element.classList.remove("nav-list__context");
-// element.classList.replace("dat_phu_tho", "dat_viet_tri"); // true neu thay the duoc, false neu khong
-// element.classList.contains("dat_viet_tri"); // true neu ton tai class nay, flase neu khong ton tai
-// toggle kết hợp add, và remove, lần đầu add, lần sau xóa cứ thế
 
-// const colors = ["red", "green", "blue", "black", "yellow", "pink"];
-// setInterval(() => {
-//   console.log("HEllo world");
+// DOM create Element
+// textContent: Là nội dung của element khi gán bằng thì là gán nội dung, khi lấy lên thì sẽ dữ nguyên
+// khoảng cách giữa các element
+// còn khi chấm tới không .textContent thì là đọc nội dung
+// createElement: Khởi tạo một element
+// innerHTML: Là các thẻ html nằm trong thằng cha nếu . tới. Còn gắn bằng thì là gán nội dung
+// html được thêm vào.
+// innerText: Lấy nội dụng của các element nếu là . tới. Còn nếu gắn bằng thì là gán nội dụng text
+// vào element
+// append: Là thêm nội dung vào bên trong element cha
+// getAttribute: Lấy các giá trị của thuộc tính trong element nếu không có thì sẽ trả về null
 
-//   let randomIndex = Math.floor(Math.random() * colors.length);
-//   document
-//     .querySelector(".box")
-//     .setAttribute("style", `background-color: ${colors[randomIndex]}`);
-// }, 1000); // 1000 ~ 1s
+// const body = document.querySelector("body");
+// const div = document.createElement("div");
+// div.setAttribute("class", "abc");
 
-const no = document.querySelector(".no");
-const yes = document.querySelector(".yes");
+// const h1 = document.createElement("h1");
+// const h2 = document.createElement("h2");
+// h1.textContent = "Dat 09";
+// h2.textContent = "Manh 09";
+// div.append(h1, h2);
 
-no.addEventListener("mouseenter", () => {
-  const ofset = ["X", "Y"];
-  const randomOfset = Math.floor(Math.random() * ofset.length);
-  let random = Math.floor(Math.random() * 600) + 150;
+// div.innerHTML = `<h1>Đạt 09</h1>
+//   <h2>Mạnh 09</h2>
+// `;
+// body.append(div);
 
-  no.setAttribute(
-    "style",
-    `transform: translate${ofset[randomOfset]}(${random}%)`
-  );
-});
+// console.log(document.querySelector(".abc")?.innerHTML);
 
-yes.addEventListener("click", () => {
-  alert("Anh yeu em lam");
-});
+// const box = document.getElementsByClassName("box");
 
-// animation
+// div.innerText =
+//   "                             DH CONG NGHE                              ";
 
-setInterval(() => {}, 1000);
+const body = document.querySelector("body");
+
+// body.setAttribute("style", "color: white; backgroud: red;");
+
+const header = body.querySelector("header");
+
+// Cách này nó gọi là nhảy từ node con lên cha
+// console.log(header.querySelector("main"));
+// parentNode, parentElement lấy thằng cha của element hiện tại
+
+console.log(header);
