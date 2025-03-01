@@ -1,6 +1,29 @@
 // buổi 1
 // Javascript: biến(let, var, const), kiểu dữ liệu ngầm định
 // cấu trúc rẽ nhánh if else, toán tử 3 ngôi
+// let number = 12;
+// const result = number > 12 ? `number lon hon 12` : "number nho hon 12";
+// console.log(result);
+
+// == -> so sanh nong -> javascript 1 == '1'
+// === -> so sanh nghiem ngat -> neu ma khac kieu du lieu -> no false nay
+
+// if (1 === "1") {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+// const response = {
+//   status: "200",
+//   message: "Get user done",
+//   data: [],
+// };
+
+// if (response.status == 200) {
+//   console.log("Lay ra duowjc response");
+// } else {
+//   console.log("Khong lay ra duoc response");
+// }
 
 // printf("Hello") -> Javascript; console.log("Hello")
 // Javascrit là ngôn ngữ hướng thủ tục -> lập trình hàm
@@ -12,6 +35,32 @@
 // var(function), let (block) tự suy ra kiểu dữ liệu khác nhau phạm vị truy cập
 // const tự suy ra kiểu dữ liệu nhưng nó là biến hằng (tức là chỉ được khởi tạo giá trị 1 lần)
 
+// {
+//   {
+//     {
+//       {
+//         {
+//           let c = 12;
+//           console.log(c);
+//         }
+//       }
+//     }
+//   }
+// }
+
+// const PI = 3.14;
+
+// PI = 12;
+// console.log(PI);
+// var c;
+// console.log(c);
+
+// function hello() {
+//   let c = 12;
+// }
+
+// console.log(c);
+
 // kieu du lieu ten bien = gia tri
 // let/var/const ten_bien = gia tri -> Javascript
 // toan tu so hoc: +, -, *, /, %, ** (lũy thừa)
@@ -21,7 +70,9 @@
 // ++a trả về giá trị sau tăng, a++ tăng lên 1 và trả về giá trị trước tăng
 // 2^2 = 4, 2^3 = 2 * 2 * 2 = 8
 
-// let a = 31;
+// let a = 11;
+// a++ -> 31
+// ++a -> 32
 // if (a >= 12) {
 //   if (a < 30) {
 //     if (a == 29) {
@@ -30,7 +81,10 @@
 //   } else {
 //     console.log("Hello");
 //   }
-// } else if (a > 30 && a <= 90) console.log("NAm trong khoang 30 - 90");
+// } else if (a > 30 && a <= 90) {
+//   console.log("NAm trong khoang 30 - 90");
+// } else {
+// }
 
 // let c = 11;
 // let kq = c > 12 ? true : false;
@@ -40,6 +94,17 @@
 // for (int i = 1; i < 10; i++) {
 
 // }
+
+// const arr = [1, 2, 3, 4, 5];
+
+// for (let dat of arr) {
+//   console.log(dat);
+// }
+
+// let a = 11;
+// do {
+//   console.log("DUNG");
+// } while (a < 10);
 
 // for (let i = 1; i <= 10; i = i + 1) {
 //   console.log(i);
@@ -134,7 +199,6 @@
 //     console.log("Mang co phan tu >= 6");
 // } else {
 //     console.log("Mang khong co phan tu >= 6");
-
 // }
 
 // const arr1 = [2, 4]
@@ -201,8 +265,8 @@
 //     dia_chi: "PHU THO",
 //     ngay_sinh: "31/05/2006",
 //     ngay_sinh: "31/05/2005"
-//     // truong_hoc: "DAI HOC CONG NGHE DONG A"
 // }
+
 // dat.truong_hoc = "DAI HOC CONG NGHE DONG A"
 
 // // delete dat.truong_hoc
@@ -338,6 +402,16 @@
 // })
 
 // console.log(result);
+
+const arr2 = [1, 2, 3, 4, 5];
+
+// console.log(arr2.slice(3, 5));
+
+// console.log(arr2.join("-dat-"));
+
+arr2.sort((a, b) => b - a);
+
+console.log(typeof arr2);
 
 // Cach phuoc thuc CRUD mang
 // push -> thêm một hoặc nhiều phần tử vào cuối mảng
@@ -675,15 +749,10 @@
 
 // div.innerText =
 //   "                             DH CONG NGHE                              ";
-
-const body = document.querySelector("body");
-
+// const body = document.querySelector("body");
 // body.setAttribute("style", "color: white; backgroud: red;");
-
-const header = body.querySelector("header");
-
+// const header = body.querySelector("header");
 // Cách này nó gọi là nhảy từ node con lên cha
 // console.log(header.querySelector("main"));
 // parentNode, parentElement lấy thằng cha của element hiện tại
-
-console.log(header);
+// console.log(header);
